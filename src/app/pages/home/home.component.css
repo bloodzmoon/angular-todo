@@ -1,0 +1,46 @@
+.page {
+  width: 100vw;
+  height: 100vh;
+  background: #292929;
+  color: white;
+  position: relative;
+}
+
+.bg {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  background: url("../../../assets/angular.svg") no-repeat center center;
+}
+
+.content {
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  font-size: 56px;
+  font-weight: 400;
+}
+
+.em {
+  color: #e33237;
+}
+
+.createby {
+  color: #c4c4c4;
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+
+.name {
+  color: inherit;
+  text-decoration: none;
+}
