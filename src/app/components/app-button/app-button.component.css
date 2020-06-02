@@ -1,0 +1,20 @@
+.app-button {
+  font-family: inherit;
+  letter-spacing: 0.6px;
+  width: 100px;
+  height: 40px;
+  color: #fff;
+  background: #333;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.app-button:hover {
+  background: #e33237;
+}
+
+.app-button:focus {
+  outline: none;
+}

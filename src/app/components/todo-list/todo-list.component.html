@@ -1,0 +1,14 @@
+<div class="container">
+  <h3 class="title">TODO LIST</h3>
+  <div
+    *ngFor="let todo of todos"
+    [ngClass]="todo.done ? 'item done' : 'item'"
+    (click)="onClick($event)"
+    [attr.data-value]="todo.id"
+  >
+    {{ todo.task }}
+    <span class="del" [attr.data-value]="todo.id" (click)="handleDelete($event)"
+      >DEL</span
+    >
+  </div>
+</div>

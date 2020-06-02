@@ -1,12 +1,19 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+
+import { TodoService } from '../../services';
 
 @Component({
   selector: 'todo',
   templateUrl: './todo.component.html',
   styleUrls: ['./todo.component.css'],
 })
-export class TodoComponent implements OnInit {
-  constructor() {}
+export class TodoComponent {
+  public newTodo: string = '';
 
-  ngOnInit() {}
+  constructor(private todoService: TodoService) {}
+
+  onSubmit() {
+    this.todoService.addTodo(this.newTodo);
+    this.newTodo = '';
+  }
 }

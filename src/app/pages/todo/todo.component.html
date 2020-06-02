@@ -1,0 +1,10 @@
+<div class="page">
+  <form (ngSubmit)="onSubmit()">
+    <app-input
+      placeholder="Type something to add..."
+      [(inputModel)]="newTodo"
+    ></app-input>
+    <app-button>ADD</app-button>
+  </form>
+  <todo-list></todo-list>
+</div>

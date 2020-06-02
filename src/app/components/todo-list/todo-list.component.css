@@ -1,0 +1,64 @@
+.container {
+  width: 1200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.title {
+  font-size: 20px;
+  text-align: left;
+}
+
+.item {
+  width: 600px;
+  padding: 10px 20px;
+  border: 1px solid #eee;
+  transition: 0.2s;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.item:hover {
+  border: 1px solid #c4c4c4;
+}
+
+.item.done {
+  color: #c4c4c4;
+}
+
+.item.done:before {
+  color: #c4c4c4;
+  content: "";
+  position: absolute;
+  width: 80%;
+  height: 2px;
+  background: #e33237;
+}
+
+.item:hover > .del {
+  opacity: 1;
+}
+
+.del {
+  opacity: 0;
+  transition: 0.2s;
+  width: 40px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  color: #777;
+}
+
+.del:hover {
+  color: red;
+  background: #f7f7f7;
+}
