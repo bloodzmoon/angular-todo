@@ -4,7 +4,7 @@
 
 Deploy [here](https://bloodzmoon.github.io/angular-todo/) with Github Page
 
-## Differrent languages
+## Differrent framework
 
 - [React](https://github.com/bloodzmoon/react-todo)
 - [Vue](https://github.com/bloodzmoon/vue-todo)
